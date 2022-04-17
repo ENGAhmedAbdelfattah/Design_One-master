@@ -1,0 +1,339 @@
+/*
+ *   Copyright (c) 2022 
+ *   All rights reserved.
+ */
+:root {
+  --main-color:#08526D;
+  --sec-color:#EC1C23;
+  --prag-color:#888;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+/* S top-info */
+.top-info {
+  background-color: var(--main-color);
+}
+
+.top-info .container .row {
+  font-size: 0.95rem;
+}
+
+.top-info .top-span {
+  color: #bfc6c9;
+}
+/* E top-info */
+
+/* S navbar */
+
+nav.navbar-light .navbar-brand, 
+nav.navbar-light .navbar-brand:hover {
+  color: var(--sec-color);
+  font-size: 38px;
+}
+nav .navbar-brand .brand-span {
+  color: var(--main-color);
+}
+nav .navbar-nav .nav-item .nav-link {
+  color: rgba(0, 0, 0, 0.59);
+  font-weight: bold;
+}
+nav .navbar-nav .nav-item.active .nav-link {
+  color: var(--sec-color);
+}
+/* E navbar */
+
+/* S carousel*/
+
+.section-carousel .carousel-inner .carousel-item img{
+  max-height: calc(100vh - 142px);
+  filter: brightness(0.3);
+}
+
+/* E carousel*/
+
+.section-carousel .header-landing h1 {
+  position: absolute;
+  left: 7%;
+  top: 15%;
+  font-size: 0.8 rem;
+}
+
+@media (min-width: 576px){
+  .section-carousel .header-landing h1 {
+    font-size: calc(2.5rem + 1.5vw);
+  }
+}
+@media (min-width: 992px){
+  .section-carousel .header-landing h1 {
+    font-size: calc(3rem + 1.5vw);
+  }
+}
+
+.section-carousel .header-landing {
+  font-size: 22px;
+}
+.section-carousel .header-landing span {
+  background-color: var(--sec-color);
+}
+
+.section-carousel #carouselExampleIndicators .carousel-indicators button {
+  height: 8px;
+}
+/* S feature*/
+
+.feature .row div .handle-icon {
+  background-color: var(--sec-color);
+  width: 30px;
+  height: 30px;
+}
+
+.feature .row div h3 {
+  color: var(--main-color);
+}
+
+.feature .row div p {
+  color: var(--prag-color);
+}
+/* E feature*/
+
+/* S */
+.company {
+  background-color: #F0F5F7;
+}
+.company p {
+  color: var(--prag-color);
+}
+.company span {
+  color: #8A8A8A;
+}
+.company a {
+  background-color: var(--sec-color);
+}
+/* E */
+
+/* S */
+.work p{
+  color: var(--prag-color);
+}
+.work .custom-button {
+  border-color: var(--main-color);
+  color: var(--main-color);
+}
+.work .custom-button:is(.active, :hover, :focus, :active:focus) {
+  border-color: var(--sec-color);
+  background-color: var(--sec-color);
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+.work .img-container div div img {
+  opacity:0.5;
+}
+
+.work .img-container div div img.active {
+  opacity:1;
+}
+/* E */
+
+/* S */
+.posts .container div .custom-p {
+  color: var(--prag-color);
+}
+
+.posts .container div .card h5 {
+  line-height: 1.6;
+  color: var(--main-color);
+}
+
+.posts .container div .card span {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--prag-color);
+}
+
+.posts .container div .card p {
+  color: var(--prag-color);
+}
+
+.posts .container div .card a {
+  color: var(--sec-color);
+}
+
+/* E slider */
+
+.slider {
+  position: relative;
+  background-image: url(../imgs/testimonial.jpg);
+  background-size: cover;
+}
+
+.slider .carousel-item {
+  height: 480px;
+}
+
+.slider .layout {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.slider .carousel-indicators button {
+  height:7px;
+}
+/* S slider */
+/* E */
+
+/* S Pricing */
+.pricing {
+  background-color: #F7F7F7;
+}
+.pricing .custom-p {
+  color: var(--prag-color);
+}
+.pricing .row .card .card-body .card-title {
+  color: var(--main-color);
+}
+.pricing .row .card .card-body span {
+  font-size: 15px;
+}
+.pricing .row .card .card-body .header-span {
+  font-weight: 600;
+  color: var(--prag-color);
+}
+.pricing .row .card .card-body .price-card {
+font-size: 30px;
+background-color: #F7F7F7;
+}
+
+.pricing .row .card .card-body .price-card .year{
+  font-size: 14px;
+}
+.pricing .row .card .card-body a.custom-a {
+  background-color: var(--sec-color);
+  padding: 12px 14px;
+  font-size: 18px;
+}
+
+@media (min-width: 992px){
+  .pricing .row div:nth-child(2) {
+    margin-top: -30px;
+  }
+}
+
+.pricing .row div:nth-child(2) p.card-text.price-card {
+  background-color: var(--sec-color);
+  color: white;
+}
+
+.pricing .row div:nth-child(2) .card .card-body a.custom-a {
+  background-color: var(--main-color);
+}
+/* E Pricing */
+
+/* S choose */
+.choose .choose-info{
+  background-color: var(--main-color);
+}
+.choose .custom-a {
+  background-color: var(--sec-color);
+  padding: 6px 20px;
+  font-size: 18px;
+}
+/* E choose */
+
+/* S data */
+.data .row div .custom-icon, .data .row div h5{
+  color: var(--main-color);
+}
+.data .row div h5 {
+
+}
+.data .row div p {
+  color: #ed1d24;
+}
+/* E data */
+
+/* S work-together */
+.work-together {
+  background-color: var(--sec-color);
+}
+
+.work-together a{
+  padding: 6px 20px;
+  font-size: 18px;
+}
+/* E work-together */
+
+/* S footer */
+.footer .footer-info .footer-brand {
+  color: var(--sec-color);
+  font-size: 50px;
+}
+.footer .footer-info .footer-brand-span {
+  color: var(--main-color);
+}
+.footer .footer-info .footer-brand + p {
+  font-size: 15px;
+  color: var(--prag-color);
+}
+
+.footer .footer-info a {
+  font-size: 15px;
+  color: var(--main-color);
+}
+
+.footer .footer-links svg {
+  color: var(--main-color);
+  font-size: 16px;
+}
+
+.footer .footer-links ul{
+  line-height: 1.5;
+}
+
+.footer .footer-contact .contact-info p {
+  font-size: 15px;
+}
+/* E footer */
+
+/* S copyright */
+.copyright span {
+  font-size: 15px;
+}
+.copyright ul li a{
+  color: var(--prag-color);
+}
+/* E copyright */
+
+/* S */
+/* E */
+
+/* S */
+/* E */
+
+/* S */
+/* E */
+
+/* S */
+/* E */
+
+/* S */
+/* E */
+
+/* S */
+/* E */
+
+/* S */
+/* E */
+
+/* S */
+/* E */
+
+/* S */
+/* E */
+
+/* S */
+/* E */

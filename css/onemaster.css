@@ -127,11 +127,11 @@ nav .navbar-nav .nav-item.active .nav-link {
   outline: none;
   box-shadow: none;
 }
+.work .img-container > div > div {
+ margin: auto;
+}
 .work .img-container div div img {
   opacity:0.5;
-  display: block;
-  width: 100%;
-  margin: auto;
 }
 
 .work .img-container div div img.active {
